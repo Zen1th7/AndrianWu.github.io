@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Andrian Wu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5d2b571321.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logoo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href='#header'>Home</a></li>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#services'>Services</a></li>
+                <li><a href='#portfolio'>Projects</a></li>
+                <li><a href='#contact'>Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Engineer</p>
+            <h1>Hi, I'm <span>Andrian Wu</span><br>From Indonesia</h1>
+        </div>
+    </div>
+</div>
+<!-- ------------about------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Energetic guy eager to apply knowledge of project coordination and completion to achieve company goals. 
+                    Skilled multitasker with superior work ethic and good teamwork, problem-solving and organizational skills. 
+                    Willing to take on any task to help team. Reliable and dedicated team player with hardworking and resourceful approach. 
+                    Dedicated to working hard to make positive contributions.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>AI and Machine Learning</span><br>Designing, Training, and Deploying Machine Learning and AI Models (OpenCV, Keras, etc)</li>                        
+                        <li><span>Programming Language</span><br>Proficient in Python, C/C++, Java, C# Language</li>
+                        <li><span>Front-End Development</span><br>Designing Web interfaces with HTML, CSS, JS</li>
+                        <li><span>Game Development</span><br>Designing and Developing Interactive and Engaging Games using Unity and Blender</li>
+                        <li><span>Computer Vision</span><br>Creating Advanced Computer Vision Solutions for Image and Video Analysis (TensorFlow, PyTorch, etc)</li>
+                        <li><span>Language</span><br>Speaking English, Mandarin, and Indonesian fluently</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023/9 - 2024/6</span><br>Lecturing English at Jia Chang and Nan Yang Elementary School</li>                        
+                        <li><span>2023/11 - 2024/4</span><br>Making and Rechecking TOEIC questions</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020/9 - 2024/6</span><br>Computer Science Bachelor Degree from National Univeristy of Kaohsiung</li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------services------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-List">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Machine Learning and AI Development</h2>
+                <p>Harnessing the power of data to drive intelligent decisions and innovation. 
+                    From predictive modeling to natural language processing, I specialize in 
+                    creating robust Machine Learning and AI solutions tailored to solve complex business challenges.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Development</h2>
+                <p>Crafting reliable, scalable, and secure software solutions that empower businesses to thrive in the digital age. 
+                    Whether it's developing custom applications or optimizing existing systems, 
+                    I deliver streamlined solutions aligned with your unique objectives.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>Web Design</h2>
+                <p>Transforming visions into captivating digital experiences. 
+                    My approach to web design combines aesthetic appeal with seamless functionality, 
+                    ensuring user-friendly interfaces that leave a lasting impression. 
+                    From responsive design to intuitive navigation, I create websites that engage and inspire.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-4.png">
+                <div class="layer">
+                    <h3>Horror Game</h3>
+                    <p>Embark on a chilling journey through a dark environment, 
+                        using a lantern to guide you as you search chests for a hidden key. Dodge enemies, collect weapons, 
+                        and unlock the exit to escape the horrors that await.</p>
+                    <a href="https://zenith67.itch.io/the-hash-slinging-slasher"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>THSR Booking by Voice Recognition</h3>
+                    <p>Automate the Taiwan High-Speed Rail (THSR) ticket booking process using voice commands. 
+                        Combine voice recognition with web automation to achieve a seamless booking experience.</p>
+                    <a href="https://github.com/Zen1th7/captcha-detection"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Dehazing</h3>
+                    <p>This project aims to enhance video clarity by implementing 
+                        a dehazing algorithm to remove haze from each video frame.</p>
+                    <a href="https://github.com/Zen1th7/dehazing"><i class="fa-solid fa-up-right-from-square"></i></a>    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Counterfeit Money Detection System</h3>
+                    <p>This project aims to develop an automated counterfeit currency detection system, 
+                        utilizing the YOLOv5 object detection model to identify and crop specific areas in banknote images.</p>
+                    <a href="https://github.com/Zen1th7/counterfeit_money"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            </div>
+            <div class="projects">
+                <div class="vid">
+                    <video controls>
+                        <source src="images/work-4.mp4">
+                      </video>
+                </div>
+                <div class="vid">
+                    <video controls>
+                        <source src="images/work-1.mp4">
+                      </video>
+                </div>
+                <div class="vid">
+                    <video controls>
+                        <source src="images/work-2.mp4">
+                      </video>
+                </div>
+                <div class="vid">
+                    <video controls>
+                        <source src="images/work-3.mp4">
+                      </video>
+                </div>
+        </div>
+        <a href="https://github.com/Zen1th7" class="btn">See more</a>
+    </div>
+</div>
+<!-- ------------contact------------ -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><a href="mailto:andrian.wu.7@gmail.com"><i class="fa-regular fa-envelope"></i> andrian.wu.7@gmail.com</a></p>
+                <p><a href="tel:+886987-128-399"><i class="fa-solid fa-phone"></i> (+886) 986-645-142</a></p>
+                
+                <div class="social-icon">
+                    <a href="https://line.me/ti/p/L375ITA8nf"><i class="fa-brands fa-line"></i></a>
+                    <a href="https://www.instagram.com/wu_andrian/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://pda.104.com.tw/profile/share/a4o8WFpWiWEbxuOAerd1eZZAw94iwkWb"><img src="images/104-1.png"></a>
+                    <a href="https://www.facebook.com/andrian.wu.7/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://linkedin.com/in/andrian-wu-16035b254"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV English</a>
+                <a href="images/my-cv-chinese.pdf" download class="btn btn2">Download CV Mandarin</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © △ndrian Wu Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+ </div>
+
+ <script src="scripts.js"></script>
+
+</body>
+</html>
